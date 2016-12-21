@@ -1,0 +1,28 @@
+<ion-view view-title="Add Music">
+    <ion-content class="create_event">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+            
+                <div class="create_event_inner">
+                    <form class="create_event--form">
+                        <article class="create_event--form_inner">
+                            <div class="form-group">
+                                <label class="label">Song Title :</label>
+                                <input class="form-control no-radius" type="text" ng-model="currentMusicData.media_title">
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Song URL :</label>
+                                <input class="form-control no-radius" type="text" ng-model="currentMusicData.link">
+                            </div>
+                        </article>
+
+                        <article class="create_event--form_button">
+                            <div class="form-group">
+                                <button class="btn btn-theme btn-block no-radius" ng-click="addMusic()">Submit</button>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+          
+        </div>
+    </ion-content>
+</ion-view>

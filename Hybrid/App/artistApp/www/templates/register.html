@@ -1,0 +1,79 @@
+<ion-view view-title="Registration Form">
+    <ion-content>
+        <div class="row event_list_row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+            <div class="create_event">
+                <div class="event_list">
+                    <div class="event_list-text">
+                        <form class="form-group">
+                            <div class="form-group">
+                                <div class="outter">
+                                    <img src="img/default_user.png" class="img-circle sign_up_avtar">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fname" class="">First Name</label>
+                                <input type="text" class="form-control" placeholder="First name" ng-model="currentUserData.fname">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname" class="">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last name" ng-model="currentUserData.lname">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="">Username</label>
+                                <input type="text" class="form-control" placeholder="Username" ng-model="currentUserData.username">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-4"><label for="gender" class="">Gender</label></div>
+                                    <div class="col-md-4 col-xs-4">
+                                        <div class="btn-group">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="gender" data-toggle="buttons" ng-model="currentUserData.gender" value="Male" btn-radio="'Male'">Male
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-4">
+                                        <div class="btn-group">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="gender" data-toggle="buttons" ng-model="currentUserData.gender" value="Female" btn-radio="'Female'">Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="">Email</label>
+                                <input type="text" class="form-control" placeholder="Email" ng-model="currentUserData.email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="">Password</label>
+                                <input type="text" class="form-control" placeholder="Password" ng-model="currentUserData.password">
+                            </div>
+                            <div class="form-group">
+                                <label for="dob" class="">Date of Birth</label>
+                                <input type="text" class="form-control" placeholder="Date of Birth" ng-model="currentUserData.dob">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_no" class="">Contact Number</label>
+                                <input type="text" class="form-control" placeholder="Contact Number" ng-model="currentUserData.contact_no">
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="">Address</label>
+                                <textarea class="form-control" placeholder="Address" ng-model="currentUserData.address"></textarea>
+                            </div>
+                            <article class="create_event--form_button">
+                                <div class="form-group">
+                                    <button class="btn btn-theme btn-block no-radius" ng-click="registration()">Sign Up</button>
+                                </div>
+                            </article>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

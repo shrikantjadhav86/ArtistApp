@@ -1,0 +1,16 @@
+<ion-view view-title="Member List">
+    <ion-nav-buttons side="right">
+        <!--<a class="button button-clear button-positive icon ion-plus-circled" href="#app/blog/add"></a>-->
+    </ion-nav-buttons>
+    <ion-content>
+	
+        <div class="list card" ng-repeat="member in memberData">
+		    <div class="item item-avatar">
+				<img src="img/images3.jpg">
+			    <h2>{{member.fname+" "+ member.lname}}</h2>
+				<p>{{member.email}}</p>
+			</div>
+        </div>
+	
+    </ion-content>
+</ion-view>

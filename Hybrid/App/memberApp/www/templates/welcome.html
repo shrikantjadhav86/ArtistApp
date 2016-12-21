@@ -1,0 +1,86 @@
+<ion-view view-title="Home">
+
+    <ion-content class="padding">
+
+        <!--<div class="Well">
+            <h2 class="title">Welcome Lady Gaga</h2>
+            <br>
+
+        </div>-->
+
+	<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 no-padding">
+		<div class="cat_event_list">
+			<a ng-click="getEvent()">
+                <div class="cat_event_list-image">
+                    <img class="img-responsive" src="img/upcoming_events1.png">
+                    <div class="cat_event_list-title text-right">
+						<span class="up_event_name">Upcoming Events</span>
+						<span class="up_event_date">30th September 2016</span>
+
+					</div>
+                </div>
+			</a>
+        </div>
+
+		<div class="inner-list">
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-padding">
+				<a ng-click="imagelists()">
+					<div class="event_list">
+							<div class="event_list-image">
+								<img class="img-responsive" src="img/lady-gaga.png">
+								<div class="cat_event_list-title text-center">
+									<span class="event_name" style="font-size:15px;">Photo Gallary</span>
+
+								</div>
+							</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-padding">
+				<a ng-click="getBlog()">
+					<div class="event_list">
+							<div class="event_list-image">
+								<img class="img-responsive" src="img/latest_music.png">
+								<div class="cat_event_list-title text-center">
+									<span class="event_name" style="font-size:15px;">Latest Blogs</span>
+
+								</div>
+							</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="item item-button-right" style="background-color:black;">
+				<h2 style="color:white;">Latest Songs</h2>
+				<button class="button button-clear button-assertive" ng-click="musiclists()">
+				 <i class="icon ion-more"></i>
+				</button>
+		</div>
+		<div class="latest_content">
+			<iframe style="width: 100%" height="100%" class="img-responsive" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&amp;color=0066cc" frameborder="0" scrolling="auto"></iframe>
+
+
+		</div>
+		<div class="item item-button-right" style="background-color:black;">
+			<h2 style="color:white;">Latest Videos</h2>
+				<button class="button button-clear button-assertive" ng-click="videolists()">
+				<i class="icon ion-more"></i>
+				</button>
+		</div>
+		<div class="latest_content">
+			<iframe width="100%" height="100%" class="img-responsive" src="https://www.youtube.com/embed/eeafBPG6naM" frameborder="0" allowfullscreen></iframe>
+
+		</div>
+
+	</div>
+
+
+
+    </ion-content>
+</ion-view>
+
+
+

@@ -1,0 +1,48 @@
+<ion-view view-title="Music List">
+
+    <ion-content>
+        <!--<div class="row event_list_row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list" ng-repeat="music in musicData">
+
+                    <div class="event_list-image">
+                        <div class="">
+                            <span class="event_name col-xs-12 padding_0" style="color:#de5947;"><h4>{{music.media_title}}</h4></span>
+
+                        </div>
+                        <iframe style="width: 100%" class="img-responsive" ng-src="{{music.link}}" frameborder="0" scrolling="auto"></iframe>
+                    </div>
+					<div>
+                        <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" ng-click= "shareMusic(music)">
+                            <p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>-->
+		<div class="row event_list_row"  ng-repeat="music in musicData">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list">
+					<div class="event_list-image">
+						<iframe style="width: 100%" class="img-responsive" ng-src="{{music.link}}" frameborder="0"></iframe>
+						<div class="event_list-title text-left">
+							<span class="event_name">{{music.media_title}}</span>
+						</div>
+
+                    </div>
+					<div id="container-floating">
+						<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" ng-click= "shareMusic(music)">
+							<p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+						</div>
+					</div>
+
+                </div>
+				<br>
+
+            </div>
+
+        </div>
+    </ion-content>
+
+</ion-view>

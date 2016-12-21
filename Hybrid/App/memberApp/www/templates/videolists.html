@@ -1,0 +1,43 @@
+<ion-view view-title="Video List">
+   
+    <ion-content>
+        
+        <div class="row event_list_row" ng-repeat="video in videoData">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list">
+                    <div class="event_list-image">
+					 <span class="event_name col-xs-12 padding_0" style="color:#de5947;"><h4>{{video.media_title}}</h4></span>
+                        <iframe style="width: 100%" class="img-responsive"  ng-src="{{video.link}}" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+                       
+                    </div>
+					<div id="container-floating">	
+                        <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" ng-click= "shareVideo(video)">
+                            <p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+                        </div>
+					</div>
+                   
+                </div>
+				<br>
+                   <!-- <div class="event_list-image">
+                        <div class="event_list-image">
+                            <iframe style="width: 100%" class="img-responsive"  ng-src="{{video.link}}" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+                        </div>-->
+                        <!--<iframe style="width: 100%" class="img-responsive"  ng-src="{{video.link}}" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+						<div class="col-xs-4 padding_0"><a class="icon ion-share btn btn-theme btn-block no-radius" href="javascript:void(0);" ng-click= "shareVideo(video)">Share</a></div>-->
+					<!--	<div id="container-floating">
+							<div class="nd3 nds"><i class="fa fa-twitter fa-2x"></i></div>
+							<div class="nd1 nds"><i class="fa fa-facebook fa-2x"></i></div>
+
+							<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+								<p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+								<img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+							</div>
+						</div>
+					</div>-->
+										
+                
+            </div>
+        </div><br></br>
+		
+    </ion-content>
+</ion-view>

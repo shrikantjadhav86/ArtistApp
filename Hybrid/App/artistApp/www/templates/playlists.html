@@ -1,0 +1,11 @@
+<ion-view view-title="Playlists">
+  <ion-content ng-controller="ExampleController">
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.name}}
+	  </ion-item>
+    </ion-list>
+	<button class="button" ng-click="shareAnywhere()">Share anywhere</button>
+	<button class="button" ng-click="shareViaTwitter('some message', null, 'https://www.thepolyglotdeveloper.com')">Share on Twitter</button>
+  </ion-content>
+</ion-view>

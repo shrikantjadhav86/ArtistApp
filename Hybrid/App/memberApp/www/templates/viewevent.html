@@ -1,0 +1,113 @@
+<ion-view view-title="View Event">
+    <ion-content>
+        <div class="row event_list_row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list">
+                    <div class="event_list-image">
+                        <img class="img-responsive" src="{{currentEventData.event_picture}}">
+                        <div class="event_list-title text-left">
+                            <span class="event_name">{{currentEventData.event_name}}</span>
+                            <div class="hr-line"></div>
+                            <span class="event_place">{{currentEventData.event_location}}</span>
+                        </div>
+                    </div>
+                    <div id="container-floating">
+                        <div class="nd3 nds"><i class="fa fa-twitter fa-2x"></i></div>
+                        <div class="nd1 nds"><i class="fa fa-facebook fa-2x"></i></div>
+
+                        <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+                            <p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+                            <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+                        </div>
+                    </div>
+                </div>
+                
+             			
+                <div class="event_list">
+				
+                    <div class="event_list-text">
+
+                        <div class="event_list-content">
+                            <h4 class="event_list-content__heading">Description</h4>
+                            <p class="event_list-content__text">{{currentEventData.event_description}}</p>
+                        </div>
+                    </div>
+					
+                </div>
+                <div class="event_list">
+				
+                    <div class="event_list-text">
+                        <div class="event_list-content col-lg-7 col-xs-7">
+                            <h4 class="event_list-content__heading">Timing</h4>
+                            <ul class="list-unstyled">
+                                <li><span class="calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span> <span class="text">{{currentEventData.event_starttime| date:'fullDate' }}</span></li>
+                                <li><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i></span> <span class="text">{{currentEventData.event_starttime| date:'shortTime' }}</span></li>
+                            </ul>
+
+                        </div>
+                        <!--<div class="event_list-content col-lg-5 col-xs-5 text-center paddin-t-10 border-left ">
+
+                            <img src="img/invite-40.png" class="img-responsive center-block">
+                            <p class="theme-color">Invite Your Friends</p>
+
+                        </div>-->
+                        <div class="clearfix"></div>
+                    </div>
+					
+                </div>
+
+                <!--<div class="event_list">
+				
+                    <div class="event_list-text">
+                        <div class="event_list-content col-lg-8 col-xs-8">
+                            <h4 class="event_list-content__heading">Who are going</h4>
+                            <ul class="list-inline going-list">
+                                <li><img src="img/friends-30.png" class="img-circle img-responsive"></li>
+                                <li><img src="img/friends-30.png" class="img-circle img-responsive"></li>
+                                <li><img src="img/friends-30.png" class="img-circle img-responsive"></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="event_list-content col-lg-4 col-xs-4 text-center">
+                            <h5 class="event_list-content__heading">Total Invited</h5>
+                            <button class="btn btn-theme no-radius">100</button>
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+					
+                </div>-->
+
+                <div class="event_list">
+				
+                    <div class="event_list-text">
+                        <div class="event_list-content col-lg-12">
+                            <h4 class="event_list-content__heading">Locate the Event</h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15132.791766088132!2d73.93932305!3d18.51995515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1481110543096" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+					
+                </div>
+
+                <!--<div class="event_list">
+				
+                    <div class="event_list-text">
+                        <div class="event_list-content col-lg-6 col-xs-6 paddin-t-10">
+                            <button class="btn btn-theme no-radius btn-block"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Going</button>
+                        </div>
+                        <div class="event_list-content col-lg-6 col-xs-6 paddin-t-10">
+                            <button class="btn btn-theme no-radius btn-block"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Not Going</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+					
+                </div>-->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

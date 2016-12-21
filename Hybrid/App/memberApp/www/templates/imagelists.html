@@ -1,0 +1,55 @@
+<ion-view view-title="Image List">
+
+    <ion-content>
+
+       <!-- <div class="row event_list_row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list" ng-repeat="image in imageData">
+
+						<div class="event_list-image">
+							<span class="event_name col-xs-12 padding_0" style="background-color:white;"><h4>{{image.media_title}}</h4></span>
+							<span><img class="img-responsive" src="{{image.link}}"></span>
+						</div>
+
+                        <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" ng-click= "shareImage(image)">
+                            <p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+                            <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+                        </div>-->
+
+
+					<!--<div class="col-xs-4 padding_0"><a class="icon ion-share btn btn-theme btn-block no-radius" ng-click= "shareImage(image)">Share</a></div>-->
+					<!--<br></br>
+
+                </div>
+            </div>
+        </div>-->
+		<div class="row event_list_row"  ng-repeat="image in imageData">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+                <div class="event_list">
+                    
+                    <div class="event_list-image">
+                        <img class="img-responsive" src="{{image.link}}">
+                        <div class="event_list-title text-left">
+                            <span class="event_name">{{image.media_title}}</span>
+                        </div>
+						
+                    </div>
+					<div id="container-floating">
+						<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" ng-click= "shareImage(image)">
+							<p class="plus"><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i></p>
+						</div>
+					</div>
+					           
+					<!--<div class="col-xs-4 padding_0"><a class="icon ion-edit btn btn-theme btn-block no-radius"  ng-click="showEdit(image)"  href="#/app/image/edit/{{image.id}}" >Edit</a></div>
+                    <div class="col-xs-4 padding_0"><a class="icon ion-trash-a btn btn-theme btn-block no-radius" ng-click= "deleteImage({{image.id}})">Delete</a></div>
+                    <div class="col-xs-4 padding_0"><a class="ion-android-share-alt btn btn-theme btn-block no-radius" ng-click= "shareImage(image)">Share</a></div>
+					<br></br>-->
+					
+                </div>
+				<br>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

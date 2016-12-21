@@ -1,0 +1,52 @@
+<ion-view view-title="Edit Event">
+    <ion-content class="create_event">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 padding_0">
+           
+                <div class="create_event_inner">
+                    <form class="create_event--form" ng-submit="editEvent(id)">
+                        <input type="hidden" placeholder="" ng-init="id = currentEventData.id" ng-model="currentEventData.id">
+                        <article class="create_event--form_inner">
+                            <div class="form-group">
+                                <label class="label">Event Name :</label>
+                                <input class="form-control no-radius" type="text" ng-model="currentEventData.event_name">
+                            </div>
+                            <div class="control-group">
+                                <label class="label">Event Start Date</label>
+                                <div class="controls input-append date form_datetime" style="position:relative;" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="event_starttime" ng-model="currentEventData.event_starttime">
+                                    <input size="16" type="text" class="form-control no-radius" value="{{currentEventData.event_starttime | date :'medium'}}" readonly >
+                                    <span class="add-on date_calender"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <input type="hidden" id="event_starttime" ng-model="currentEventData.event_starttime" /><br/>
+                            </div>
+                            <div class="control-group">
+                                <label class="label">Event End Date</label>
+                                <div class="controls input-append date form_datetime" style="position:relative;" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="event_endtime" >
+                                    <input size="16" type="text" class="form-control no-radius" value="{{currentEventData.event_endtime | date :'medium'}}" readonly>
+                                    <span class="add-on date_calender"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <input type="hidden" id="event_endtime" value="" ng-model="currentEventData.event_endtime"/><br/>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Event Location :</label>
+                                <input class="form-control no-radius" type="text" ng-model="currentEventData.event_location">
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Event Picture :</label>
+                                <input class="form-control no-radius" type="text" ng-model="currentEventData.event_picture">
+                            </div>
+                            <div class="form-group">
+                                <label class="label"> Description :</label>
+                                <textarea id="textarea" name="textarea" class="form-control no-radius" ng-model="currentEventData.event_description"></textarea>
+                            </div>
+                        </article>
+                        <article class="create_event--form_button">
+                            <div class="form-group">
+                                <button class="btn btn-theme btn-block no-radius" ng-click="addEvent()">Submit</button>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+           
+        </div>
+    </ion-content>
+</ion-view>
